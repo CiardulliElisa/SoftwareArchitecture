@@ -11,5 +11,7 @@
     <orderEntry type="module" module-name="ChinaTaxes" exported="" />
     <orderEntry type="module" module-name="BrazilTaxes" exported="" />
     <orderEntry type="module" module-name="ItalyTaxes" exported="" />
+    <orderEntry type="module" module-name="XMLReader" exported="" />
+    <orderEntry type="module" module-name="CVSReader" exported="" />
   </component>
 </module>
