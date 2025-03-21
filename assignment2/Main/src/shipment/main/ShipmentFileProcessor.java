@@ -35,6 +35,7 @@ public class ShipmentFileProcessor {
         double totalTaxes = 0;
         String extension = fileName.substring(fileName.indexOf(".") + 1);
         ShipmentReader reader = shipmentReaderMap.get(extension);
+        System.out.println(shipmentReaderMap.get(extension));
         List<Shipment> shipments = reader.readFile(fileName);
         for(Shipment s : shipments) {
             TaxesCalculator calculator = taxesCalculatorMap.get(s.getCountry());

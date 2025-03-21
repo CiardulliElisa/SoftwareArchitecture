@@ -7,7 +7,7 @@ public class ChinaTaxes implements TaxesCalculator {
 
     public double calculateTax(Shipment s) {
         double totalTaxes = 0.0;
-        if(s.getProductType().equals("ELECTRONIC")) {
+        if(s.getProductType().equals("ELETRONICS")) {
             totalTaxes = s.getAmount() * s.getIndividualPrice() * 0.5;
         } else {
             totalTaxes = s.getAmount() * s.getIndividualPrice() * 0.3;

@@ -34,6 +34,6 @@ public class CVSReader implements ShipmentReader {
     }
 
     public String getFileType() {
-        return "CVS";
+        return "csv";
     }
 }

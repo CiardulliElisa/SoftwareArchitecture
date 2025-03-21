@@ -1,4 +1,3 @@
-import shipment.api.Shipment;
 import shipment.api.ShipmentReader;
 import shipment.csv.CVSReader;
 
