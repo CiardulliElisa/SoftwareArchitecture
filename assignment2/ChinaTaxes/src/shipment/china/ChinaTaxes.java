@@ -11,6 +11,7 @@ public class ChinaTaxes implements TaxesCalculator {
             totalTaxes = s.getAmount() * s.getIndividualPrice() * 0.5;
         } else {
             totalTaxes = s.getAmount() * s.getIndividualPrice() * 0.3;
+
         }
         if(s.getAmount() >= 1000 || s.getAmount() * s.getIndividualPrice() >= 100_000) {
             totalTaxes -= totalTaxes*0.2;

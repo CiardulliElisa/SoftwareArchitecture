@@ -27,12 +27,15 @@ public class ShipmentFileProcessor {
             shipmentReaderMap.put(reader.getFileType(), reader);
         }
 
-        double total = totalTaxes("shipments.csv");
-        System.out.println(total);
+        double csv_total = totalTaxes("shipments.csv");
+        double xml_total = totalTaxes("shipments.xml");
+
+        System.out.println(csv_total);
+        System.out.println(xml_total);
     }
 
     public static double totalTaxes(String fileName) {
-        double totalTaxes = 0;
+        double totalTaxes = 0.0;
         String extension = fileName.substring(fileName.indexOf(".") + 1);
         ShipmentReader reader = shipmentReaderMap.get(extension);
         System.out.println(shipmentReaderMap.get(extension));
@@ -41,6 +44,8 @@ public class ShipmentFileProcessor {
             TaxesCalculator calculator = taxesCalculatorMap.get(s.getCountry());
             if(calculator == null) {
                 System.out.println("No tax calculator for " + s.getCountry());
+            } else {
+                totalTaxes += calculator.calculateTax(s);
             }
         }
         return totalTaxes;

@@ -5,10 +5,18 @@ import shipment.api.TaxesCalculator;
 
 public class BrazilTaxes implements TaxesCalculator {
     public double calculateTax(Shipment s) {
-        return 0;
+        double taxes = 0.0;
+
+        taxes = (s.getAmount() * s.getIndividualPrice() * 0.4) + s.getShipmentPrice();
+
+        if(s.getProductType().equals("FOOD") && taxes > 10_000) {
+            taxes -= (taxes-10_000) * 0.4;
+        }
+
+        return taxes;
     }
 
     public String getCountry() {
-        return "";
+        return "Brazil";
     }
 }
