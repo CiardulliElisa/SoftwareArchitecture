@@ -11,9 +11,8 @@ public class ItalyTaxes implements TaxesCalculator {
 
         taxes = total_price*0.3;
 
-        // is typo?
         if(s.getIndividualPrice() > 500) {
-            taxes += 5.00;
+            taxes += 5;
         }
 
         if(s.getProductType().equals("CLOTHES") && total_price < 50_000) {
