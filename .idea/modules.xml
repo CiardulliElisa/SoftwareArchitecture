@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/assignment2/ShipmentAPI/ShipmentAPI.iml" filepath="$PROJECT_DIR$/assignment2/ShipmentAPI/ShipmentAPI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SoftwareArchitecture.iml" filepath="$PROJECT_DIR$/SoftwareArchitecture.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SoftwareArchitecture2.iml" filepath="$PROJECT_DIR$/SoftwareArchitecture2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SoftwareArchitecture3.iml" filepath="$PROJECT_DIR$/SoftwareArchitecture3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SoftwareArchitecture4.iml" filepath="$PROJECT_DIR$/SoftwareArchitecture4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SoftwareArchitecture5.iml" filepath="$PROJECT_DIR$/SoftwareArchitecture5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SoftwareArchitecture6.iml" filepath="$PROJECT_DIR$/SoftwareArchitecture6.iml" />
+    </modules>
+  </component>
+</project>
